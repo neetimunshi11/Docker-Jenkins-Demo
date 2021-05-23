@@ -90,6 +90,19 @@ pipeline {
       }
 
 	}
+	  
+	stage('Remove dangling docker images') {
+
+      steps{
+
+        script {
+
+		        sh "docker image prune"
+        }
+
+      }
+
+	}
 
   }
 
