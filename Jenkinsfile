@@ -97,7 +97,7 @@ pipeline {
 
         script {
 
-		        sh "docker system prune --all"
+		        sh "docker system prune --force --all"
         }
 
       }
